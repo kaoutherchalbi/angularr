@@ -5,10 +5,10 @@ pipeline {
         stage('Gut hub pull stage ') {
             steps {
                 script{
-                    checkout([$class: 'GitSCM' , branches: [[name: '*/master']] ,
+                    checkout([$class: 'GitSCM' , branches: [[name: '*/main']] ,
                        userRemoteConfigs: [[
                            credentialsId: 'Githubcredentials',
-                           url :'https://github.com/Zeroxcharisma/Angular2.git']]])
+                           url :'https://github.com/kaoutherchalbi/angularr.git']]])
                 }
             
             }
